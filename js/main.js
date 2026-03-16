@@ -14,12 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroParticles();
     initParallaxEffects();
     initCinematicCursor();
+    initCardTilt();
   }
   initHeroCounters();
   initCarousel();
   initPremiumFilters();
   initInquiryForm();
   initSmoothScroll();
+  initImageLoadStates();
   initVehicleModal();
   initI18n();
   initCookieConsent();
@@ -148,6 +150,23 @@ function initScrollAnimations() {
   });
 
   fadeElements.forEach(el => observer.observe(el));
+}
+
+/* ---------- Image Load States (Skeleton -> Fade In) ---------- */
+function initImageLoadStates() {
+  const images = document.querySelectorAll(
+    '.card-image img, .premium-card-image img, .limited-image img, ' +
+    '.lifestyle-image img, .vehicle-image img, .motorsport-bg-img'
+  );
+
+  images.forEach(img => {
+    if (img.complete && img.naturalHeight > 0) {
+      img.classList.add('loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('loaded'), { once: true });
+      img.addEventListener('error', () => img.classList.add('loaded'), { once: true });
+    }
+  });
 }
 
 /* ---------- Video Fallback ---------- */
@@ -550,11 +569,12 @@ function initParallaxEffects() {
 
 function applyParallax() {
   const scrollY = window.scrollY;
+  const vh = window.innerHeight;
 
   // Hero parallax
   const heroContent = document.querySelector('.hero-content');
-  if (heroContent && scrollY < window.innerHeight) {
-    const opacity = 1 - (scrollY / (window.innerHeight * 0.6));
+  if (heroContent && scrollY < vh) {
+    const opacity = 1 - (scrollY / (vh * 0.6));
     const translateY = scrollY * 0.3;
     heroContent.style.opacity = Math.max(0, opacity);
     heroContent.style.transform = `translateY(${translateY}px)`;
@@ -566,6 +586,42 @@ function applyParallax() {
     const opacity = 1 - (scrollY / 200);
     scrollIndicator.style.opacity = Math.max(0, opacity);
   }
+
+  // Motorsport background parallax
+  const motorsportBg = document.querySelector('.motorsport-bg-img');
+  if (motorsportBg) {
+    const section = document.getElementById('motorsport');
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < vh && rect.bottom > 0) {
+        const progress = (vh - rect.top) / (vh + rect.height);
+        motorsportBg.style.transform = `translateY(${(progress - 0.5) * -60}px) scale(1.1)`;
+      }
+    }
+  }
+}
+
+/* ---------- 3D Card Tilt (Desktop Only) ---------- */
+function initCardTilt() {
+  if (window.innerWidth < 1024 || prefersReducedMotion) return;
+
+  document.querySelectorAll('.collection-card, .premium-card').forEach(card => {
+    card.style.transformStyle = 'preserve-3d';
+    card.style.perspective = '800px';
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      card.style.transform = `rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-4px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.transition = 'transform 0.5s ease';
+      setTimeout(() => { card.style.transition = ''; }, 500);
+    });
+  });
 }
 
 /* ---------- Cinematic Cursor Glow ---------- */
