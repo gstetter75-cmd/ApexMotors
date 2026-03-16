@@ -49,8 +49,11 @@
     <section id="hero" class="hero">
       <div class="hero-video-overlay"></div>
       <div class="hero-gradient-overlay"></div>
-      <!-- Cinematic video background simulated with animated gradient -->
+      <!-- Cinematic video background -->
       <div class="hero-video-bg">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.pexels.com/photos/17580107/pexels-photo-17580107.jpeg?auto=compress&cs=tinysrgb&w=1920">
+          <source src="https://assets.mixkit.co/videos/50990/50990-1080.mp4" type="video/mp4">
+        </video>
         <div class="hero-particles" id="heroParticles"></div>
         <div class="hero-light-streaks">
           <div class="streak streak-1"></div>
@@ -131,15 +134,8 @@
         <div class="collection-grid">
           <div class="collection-card fade-up" data-category="supercars">
             <div class="card-image-wrapper">
-              <div class="card-image" style="background: linear-gradient(135deg, #1a0000 0%, #3d0000 50%, #0a0a0a 100%);">
-                <div class="card-image-icon">
-                  <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 45 L25 30 L40 25 L60 25 L75 30 L90 45" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <circle cx="25" cy="48" r="6" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <circle cx="75" cy="48" r="6" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <path d="M35 25 L38 15 L62 15 L65 25" stroke="#E10600" stroke-width="1.5" fill="none"/>
-                  </svg>
-                </div>
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/17077313/pexels-photo-17077313.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Red Ferrari 488 Spider supercar" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
@@ -151,17 +147,8 @@
           </div>
           <div class="collection-card fade-up" data-category="hypercars">
             <div class="card-image-wrapper">
-              <div class="card-image" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a0005 50%, #0a0a0a 100%);">
-                <div class="card-image-icon">
-                  <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 45 L20 28 L35 20 L65 20 L80 28 L95 45" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <circle cx="22" cy="48" r="6" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <circle cx="78" cy="48" r="6" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <path d="M30 20 L35 10 L65 10 L70 20" stroke="#E10600" stroke-width="1.5" fill="none"/>
-                    <path d="M40 20 L42 14" stroke="#E10600" stroke-width="1" fill="none"/>
-                    <path d="M60 20 L58 14" stroke="#E10600" stroke-width="1" fill="none"/>
-                  </svg>
-                </div>
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/30674495/pexels-photo-30674495.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek black supercar in urban setting" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
@@ -173,12 +160,8 @@
           </div>
           <div class="collection-card fade-up" data-category="limited">
             <div class="card-image-wrapper">
-              <div class="card-image" style="background: linear-gradient(135deg, #0a0a0a 0%, #0d0005 50%, #1a0000 100%);">
-                <div class="card-image-icon">
-                  <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="50,8 55,22 70,22 58,32 62,46 50,38 38,46 42,32 30,22 45,22" stroke="#E10600" stroke-width="2" fill="none"/>
-                  </svg>
-                </div>
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/28758257/pexels-photo-28758257.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek red Ferrari on display" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
@@ -190,14 +173,8 @@
           </div>
           <div class="collection-card fade-up" data-category="collector">
             <div class="card-image-wrapper">
-              <div class="card-image" style="background: linear-gradient(135deg, #050505 0%, #150008 50%, #0a0a0a 100%);">
-                <div class="card-image-icon">
-                  <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="15" width="60" height="30" rx="3" stroke="#E10600" stroke-width="2" fill="none"/>
-                    <path d="M30 45 L30 50 M70 45 L70 50" stroke="#E10600" stroke-width="2"/>
-                    <text x="50" y="35" text-anchor="middle" font-family="Orbitron" font-size="10" fill="#E10600">001</text>
-                  </svg>
-                </div>
+              <div class="card-image">
+                <img src="https://images.pexels.com/photos/18108314/pexels-photo-18108314.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern expensive cars in luxury garage" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
@@ -224,16 +201,9 @@
         <div class="carousel-track" id="carouselTrack">
 
           <div class="vehicle-card">
-            <div class="vehicle-image" style="background: linear-gradient(180deg, #1a0000 0%, #0a0a0a 60%, #050505 100%);">
+            <div class="vehicle-image">
               <div class="vehicle-badge">New</div>
-              <div class="vehicle-silhouette">
-                <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M40 150 L70 110 L120 80 L180 70 L260 70 L320 90 L360 150" stroke="#E10600" stroke-width="2" fill="none" opacity="0.6"/>
-                  <ellipse cx="100" cy="155" rx="22" ry="22" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <ellipse cx="300" cy="155" rx="22" ry="22" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <path d="M140 70 L155 45 L245 45 L260 70" stroke="#E10600" stroke-width="1.5" fill="none" opacity="0.3"/>
-                </svg>
-              </div>
+              <img src="https://images.pexels.com/photos/9130190/pexels-photo-9130190.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Vortex GT" loading="lazy">
             </div>
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Vortex GT</h3>
@@ -258,16 +228,9 @@
           </div>
 
           <div class="vehicle-card">
-            <div class="vehicle-image" style="background: linear-gradient(180deg, #0d0005 0%, #0a0a0a 60%, #050505 100%);">
+            <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">Limited</div>
-              <div class="vehicle-silhouette">
-                <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M30 150 L60 100 L110 70 L170 60 L270 60 L330 85 L370 150" stroke="#E10600" stroke-width="2" fill="none" opacity="0.6"/>
-                  <ellipse cx="95" cy="155" rx="24" ry="24" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <ellipse cx="310" cy="155" rx="24" ry="24" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <path d="M130 60 L140 35 L260 35 L270 60" stroke="#E10600" stroke-width="1.5" fill="none" opacity="0.3"/>
-                </svg>
-              </div>
+              <img src="https://images.pexels.com/photos/11629361/pexels-photo-11629361.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Nemesis RSR" loading="lazy">
             </div>
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Nemesis RSR</h3>
@@ -292,15 +255,8 @@
           </div>
 
           <div class="vehicle-card">
-            <div class="vehicle-image" style="background: linear-gradient(180deg, #0a0505 0%, #0a0a0a 60%, #050505 100%);">
-              <div class="vehicle-silhouette">
-                <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M45 150 L75 115 L130 85 L190 75 L250 75 L310 95 L355 150" stroke="#E10600" stroke-width="2" fill="none" opacity="0.6"/>
-                  <ellipse cx="105" cy="155" rx="20" ry="20" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <ellipse cx="295" cy="155" rx="20" ry="20" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <path d="M150 75 L160 50 L240 50 L250 75" stroke="#E10600" stroke-width="1.5" fill="none" opacity="0.3"/>
-                </svg>
-              </div>
+            <div class="vehicle-image">
+              <img src="https://images.pexels.com/photos/30806967/pexels-photo-30806967.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Phantom S" loading="lazy">
             </div>
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Phantom S</h3>
@@ -325,18 +281,9 @@
           </div>
 
           <div class="vehicle-card">
-            <div class="vehicle-image" style="background: linear-gradient(180deg, #100005 0%, #0a0a0a 60%, #050505 100%);">
+            <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">1 of 7</div>
-              <div class="vehicle-silhouette">
-                <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M25 150 L55 95 L100 65 L160 55 L280 55 L340 80 L375 150" stroke="#E10600" stroke-width="2" fill="none" opacity="0.6"/>
-                  <ellipse cx="90" cy="155" rx="25" ry="25" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <ellipse cx="315" cy="155" rx="25" ry="25" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <path d="M120 55 L135 25 L265 25 L280 55" stroke="#E10600" stroke-width="1.5" fill="none" opacity="0.3"/>
-                  <line x1="160" y1="55" x2="165" y2="30" stroke="#E10600" stroke-width="1" opacity="0.2"/>
-                  <line x1="240" y1="55" x2="235" y2="30" stroke="#E10600" stroke-width="1" opacity="0.2"/>
-                </svg>
-              </div>
+              <img src="https://images.pexels.com/photos/30644946/pexels-photo-30644946.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Zenith One" loading="lazy">
             </div>
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Zenith One</h3>
@@ -361,16 +308,9 @@
           </div>
 
           <div class="vehicle-card">
-            <div class="vehicle-image" style="background: linear-gradient(180deg, #0a0800 0%, #0a0a0a 60%, #050505 100%);">
+            <div class="vehicle-image">
               <div class="vehicle-badge">Heritage</div>
-              <div class="vehicle-silhouette">
-                <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M50 150 L80 120 L130 95 L180 85 L240 85 L300 100 L350 150" stroke="#E10600" stroke-width="2" fill="none" opacity="0.6"/>
-                  <ellipse cx="110" cy="155" rx="20" ry="20" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <ellipse cx="290" cy="155" rx="20" ry="20" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <path d="M145 85 L155 60 L245 60 L255 85" stroke="#E10600" stroke-width="1.5" fill="none" opacity="0.3"/>
-                </svg>
-              </div>
+              <img src="https://images.pexels.com/photos/17377922/pexels-photo-17377922.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Classica 964" loading="lazy">
             </div>
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Classica 964</h3>
@@ -395,16 +335,9 @@
           </div>
 
           <div class="vehicle-card">
-            <div class="vehicle-image" style="background: linear-gradient(180deg, #0a000a 0%, #0a0a0a 60%, #050505 100%);">
+            <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">Electric</div>
-              <div class="vehicle-silhouette">
-                <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M35 150 L65 105 L115 75 L175 65 L265 65 L325 90 L365 150" stroke="#E10600" stroke-width="2" fill="none" opacity="0.6"/>
-                  <ellipse cx="100" cy="155" rx="22" ry="22" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <ellipse cx="305" cy="155" rx="22" ry="22" stroke="#E10600" stroke-width="2" fill="none" opacity="0.4"/>
-                  <path d="M190 30 L175 65 L200 55 L185 90" stroke="#E10600" stroke-width="2" fill="none" opacity="0.5"/>
-                </svg>
-              </div>
+              <img src="https://images.pexels.com/photos/29851072/pexels-photo-29851072.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Volt Hyperion" loading="lazy">
             </div>
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Volt Hyperion</h3>
@@ -444,13 +377,8 @@
     <!-- Section 5: Motorsport DNA -->
     <section id="motorsport" class="section motorsport-section">
       <div class="motorsport-bg">
-        <div class="motorsport-track-lines">
-          <svg viewBox="0 0 1920 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0 600 Q480 200 960 400 T1920 200" stroke="#E10600" stroke-width="1" fill="none" opacity="0.15"/>
-            <path d="M0 650 Q480 250 960 450 T1920 250" stroke="#E10600" stroke-width="1" fill="none" opacity="0.1"/>
-            <path d="M0 550 Q480 150 960 350 T1920 150" stroke="#E10600" stroke-width="1" fill="none" opacity="0.08"/>
-          </svg>
-        </div>
+        <img src="https://images.pexels.com/photos/12532098/pexels-photo-12532098.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Aerial view of race track" class="motorsport-bg-img" loading="lazy">
+        <div class="motorsport-bg-overlay"></div>
       </div>
       <div class="container">
         <div class="motorsport-content">
@@ -502,15 +430,9 @@
         </div>
         <div class="limited-grid">
           <div class="limited-card limited-card--featured fade-up">
-            <div class="limited-image" style="background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);">
+            <div class="limited-image">
               <div class="limited-number">01/07</div>
-              <div class="limited-silhouette">
-                <svg viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M50 220 L100 150 L180 100 L280 85 L420 85 L500 130 L560 220" stroke="#E10600" stroke-width="2.5" fill="none" opacity="0.5"/>
-                  <ellipse cx="140" cy="230" rx="35" ry="35" stroke="#E10600" stroke-width="2" fill="none" opacity="0.3"/>
-                  <ellipse cx="470" cy="230" rx="35" ry="35" stroke="#E10600" stroke-width="2" fill="none" opacity="0.3"/>
-                </svg>
-              </div>
+              <img src="https://images.pexels.com/photos/30644946/pexels-photo-30644946.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Apex Zenith One hypercar" loading="lazy">
             </div>
             <div class="limited-info">
               <span class="limited-tag">Hypercar | 1 of 7</span>
@@ -525,8 +447,9 @@
             </div>
           </div>
           <div class="limited-card fade-up">
-            <div class="limited-image" style="background: linear-gradient(135deg, #0d0005 0%, #0a0a0a 100%);">
+            <div class="limited-image">
               <div class="limited-number">01/25</div>
+              <img src="https://images.pexels.com/photos/11629361/pexels-photo-11629361.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Nemesis RSR" loading="lazy">
             </div>
             <div class="limited-info">
               <span class="limited-tag">Supercar | 1 of 25</span>
@@ -536,8 +459,9 @@
             </div>
           </div>
           <div class="limited-card fade-up">
-            <div class="limited-image" style="background: linear-gradient(135deg, #050510 0%, #0a0a0a 100%);">
+            <div class="limited-image">
               <div class="limited-number">01/50</div>
+              <img src="https://images.pexels.com/photos/29851072/pexels-photo-29851072.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Volt Hyperion" loading="lazy">
             </div>
             <div class="limited-info">
               <span class="limited-tag">Electric | 1 of 50</span>
@@ -560,11 +484,8 @@
         </div>
         <div class="lifestyle-grid">
           <div class="lifestyle-item lifestyle-item--large fade-up">
-            <div class="lifestyle-image" style="background: linear-gradient(180deg, #0a0a0a 0%, #1a0500 50%, #0a0a0a 100%);">
-              <div class="lifestyle-scene">
-                <div class="scene-road"></div>
-                <div class="scene-lights"></div>
-              </div>
+            <div class="lifestyle-image">
+              <img src="https://images.pexels.com/photos/17580107/pexels-photo-17580107.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Supercar at night with LED lights" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
               <h3>Night Drives</h3>
@@ -572,10 +493,8 @@
             </div>
           </div>
           <div class="lifestyle-item fade-up">
-            <div class="lifestyle-image" style="background: linear-gradient(180deg, #0a0a0a 0%, #0a0a15 50%, #0a0a0a 100%);">
-              <div class="lifestyle-scene lifestyle-scene--monaco">
-                <div class="scene-skyline"></div>
-              </div>
+            <div class="lifestyle-image">
+              <img src="https://images.pexels.com/photos/33998685/pexels-photo-33998685.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury sports cars at night in Monaco" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
               <h3>Monaco Nights</h3>
@@ -583,10 +502,8 @@
             </div>
           </div>
           <div class="lifestyle-item fade-up">
-            <div class="lifestyle-image" style="background: linear-gradient(180deg, #0a0a0a 0%, #0a0505 50%, #0a0a0a 100%);">
-              <div class="lifestyle-scene lifestyle-scene--track">
-                <div class="scene-circuit"></div>
-              </div>
+            <div class="lifestyle-image">
+              <img src="https://images.pexels.com/photos/29252112/pexels-photo-29252112.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Aerial view of Formula One race car on track" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
               <h3>Track Days</h3>
@@ -594,8 +511,8 @@
             </div>
           </div>
           <div class="lifestyle-item fade-up">
-            <div class="lifestyle-image" style="background: linear-gradient(180deg, #0a0a0a 0%, #080a0a 50%, #0a0a0a 100%);">
-              <div class="lifestyle-scene lifestyle-scene--villa"></div>
+            <div class="lifestyle-image">
+              <img src="https://images.pexels.com/photos/9139588/pexels-photo-9139588.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury cars inside a modern garage" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
               <h3>Private Collection</h3>
@@ -603,8 +520,8 @@
             </div>
           </div>
           <div class="lifestyle-item fade-up">
-            <div class="lifestyle-image" style="background: linear-gradient(180deg, #0a0a0a 0%, #0f0a05 50%, #0a0a0a 100%);">
-              <div class="lifestyle-scene lifestyle-scene--sunset"></div>
+            <div class="lifestyle-image">
+              <img src="https://images.pexels.com/photos/5288701/pexels-photo-5288701.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Supercar with picturesque scenery" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
               <h3>Open Roads</h3>
