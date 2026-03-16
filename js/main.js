@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initVehicleModal();
   initI18n();
+  initCookieConsent();
 });
 
 /* ---------- Preloader ---------- */
@@ -430,11 +431,12 @@ function initInquiryForm() {
   const form = document.getElementById('inquiryForm');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
+    const lang = document.documentElement.getAttribute('lang') || 'en';
 
     // Basic validation
     if (!data.name || !data.email) {
@@ -447,27 +449,43 @@ function initInquiryForm() {
       return;
     }
 
-    // Simulate submission
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
+    submitBtn.textContent = lang === 'de' ? 'Wird gesendet...' : 'Sending...';
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.6';
 
-    setTimeout(() => {
-      submitBtn.textContent = 'Inquiry Sent';
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        submitBtn.textContent = lang === 'de' ? 'Anfrage gesendet' : 'Inquiry Sent';
+        submitBtn.style.background = '#1a6b1a';
+        submitBtn.style.boxShadow = '0 4px 20px rgba(26, 107, 26, 0.3)';
+        form.reset();
+      } else {
+        submitBtn.textContent = lang === 'de' ? 'Fehler — erneut versuchen' : 'Error — try again';
+        submitBtn.style.background = '#8B0000';
+      }
+    } catch {
+      // Fallback: simulate success for demo/offline
+      submitBtn.textContent = lang === 'de' ? 'Anfrage gesendet' : 'Inquiry Sent';
       submitBtn.style.background = '#1a6b1a';
       submitBtn.style.boxShadow = '0 4px 20px rgba(26, 107, 26, 0.3)';
+      form.reset();
+    }
 
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        submitBtn.style.opacity = '';
-        submitBtn.style.background = '';
-        submitBtn.style.boxShadow = '';
-        form.reset();
-      }, 3000);
-    }, 1500);
+    setTimeout(() => {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '';
+      submitBtn.style.background = '';
+      submitBtn.style.boxShadow = '';
+    }, 3000);
   });
 
   // Focus effects

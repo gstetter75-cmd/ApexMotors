@@ -822,7 +822,8 @@
             </div>
           </div>
           <div class="inquiry-right fade-up">
-            <form class="inquiry-form" id="inquiryForm" novalidate>
+            <form class="inquiry-form" id="inquiryForm" action="https://formspree.io/f/xyzgobpr" method="POST" novalidate>
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
               <div class="form-group">
                 <label for="name" class="form-label" data-i18n="inquiry.form.name">Full Name</label>
                 <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" data-i18n-placeholder="inquiry.form.name.ph" required>
@@ -943,6 +944,7 @@
     </div>
   </div>
 
+  <script src="js/cookie-consent.js"></script>
   <script src="js/vehicles.js"></script>
   <script src="js/vehicle-modal.js"></script>
   <script src="js/i18n.js"></script>
