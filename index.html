@@ -28,18 +28,22 @@
         <span class="logo-motors">MOTORS</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#collection" class="nav-link">Collection</a></li>
-        <li><a href="#vehicles" class="nav-link">Vehicles</a></li>
-        <li><a href="#limited" class="nav-link">Limited Cars</a></li>
-        <li><a href="#motorsport" class="nav-link">Motorsport DNA</a></li>
-        <li><a href="#lifestyle" class="nav-link">Lifestyle</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#inquiry" class="nav-link nav-link--cta">Private Inquiry</a></li>
+        <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#collection" class="nav-link" data-i18n="nav.collection">Collection</a></li>
+        <li><a href="#vehicles" class="nav-link" data-i18n="nav.vehicles">Vehicles</a></li>
+        <li><a href="#premium" class="nav-link" data-i18n="nav.premium">Premium Cars</a></li>
+        <li><a href="#limited" class="nav-link" data-i18n="nav.limited">Limited Cars</a></li>
+        <li><a href="#motorsport" class="nav-link" data-i18n="nav.motorsport">Motorsport DNA</a></li>
+        <li><a href="#lifestyle" class="nav-link" data-i18n="nav.lifestyle">Lifestyle</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#inquiry" class="nav-link nav-link--cta" data-i18n="nav.inquiry">Private Inquiry</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch to German">DE</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -49,7 +53,6 @@
     <section id="hero" class="hero">
       <div class="hero-video-overlay"></div>
       <div class="hero-gradient-overlay"></div>
-      <!-- Cinematic video background -->
       <div class="hero-video-bg">
         <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.pexels.com/photos/17580107/pexels-photo-17580107.jpeg?auto=compress&cs=tinysrgb&w=1920">
           <source src="https://assets.mixkit.co/videos/50990/50990-1080.mp4" type="video/mp4">
@@ -64,33 +67,33 @@
         </div>
       </div>
       <div class="hero-content">
-        <p class="hero-welcome reveal-text">Welcome to Apex Motors</p>
+        <p class="hero-welcome reveal-text" data-i18n="hero.welcome">Welcome to Apex Motors</p>
         <h1 class="hero-headline">
-          <span class="headline-line">Where Performance</span>
-          <span class="headline-line">Meets <span class="text-red">Prestige</span></span>
+          <span class="headline-line" data-i18n="hero.headline1">Where Performance</span>
+          <span class="headline-line" data-i18n="hero.headline2">Meets <span class="text-red">Prestige</span></span>
         </h1>
-        <p class="hero-subline">Experience the pinnacle of automotive excellence</p>
+        <p class="hero-subline" data-i18n="hero.subline">Experience the pinnacle of automotive excellence</p>
         <div class="hero-buttons">
-          <a href="#collection" class="btn btn-primary">Explore Collection</a>
-          <a href="#vehicles" class="btn btn-outline">View Vehicles</a>
+          <a href="#collection" class="btn btn-primary" data-i18n="hero.btn.collection">Explore Collection</a>
+          <a href="#vehicles" class="btn btn-outline" data-i18n="hero.btn.vehicles">View Vehicles</a>
         </div>
       </div>
       <div class="hero-scroll-indicator">
-        <span>Scroll to explore</span>
+        <span data-i18n="hero.scroll">Scroll to explore</span>
         <div class="scroll-line"></div>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
           <span class="hero-stat-number" data-target="47">0</span>
-          <span class="hero-stat-label">Exclusive Vehicles</span>
+          <span class="hero-stat-label" data-i18n="hero.stat1.label">Exclusive Vehicles</span>
         </div>
         <div class="hero-stat">
           <span class="hero-stat-number" data-target="12">0</span>
-          <span class="hero-stat-label">Limited Editions</span>
+          <span class="hero-stat-label" data-i18n="hero.stat2.label">Limited Editions</span>
         </div>
         <div class="hero-stat">
           <span class="hero-stat-number" data-target="8">0</span>
-          <span class="hero-stat-label">World Records</span>
+          <span class="hero-stat-label" data-i18n="hero.stat3.label">World Records</span>
         </div>
       </div>
     </section>
@@ -100,24 +103,24 @@
       <div class="container">
         <div class="brand-content">
           <div class="brand-line"></div>
-          <h2 class="brand-headline fade-up">
+          <h2 class="brand-headline fade-up" data-i18n="brand.headline">
             We don't build cars.<br>
             We engineer <span class="text-red">obsessions.</span>
           </h2>
-          <p class="brand-text fade-up">
+          <p class="brand-text fade-up" data-i18n="brand.text1">
             Apex Motors was born from a singular vision — to create machines that transcend
             the boundaries of performance and luxury. Every vehicle in our collection represents
             the absolute pinnacle of automotive engineering, handcrafted by masters who understand
             that true prestige lies in the details.
           </p>
-          <p class="brand-text fade-up">
+          <p class="brand-text fade-up" data-i18n="brand.text2">
             From the carbon fiber monocoque to the hand-stitched leather interior,
             every element is a testament to uncompromising excellence. This is not
             merely transportation. This is a statement of who you are.
           </p>
           <div class="brand-signature fade-up">
             <span class="signature-line"></span>
-            <span class="signature-text">The Apex Standard</span>
+            <span class="signature-text" data-i18n="brand.signature">The Apex Standard</span>
           </div>
         </div>
       </div>
@@ -127,79 +130,78 @@
     <section id="collection" class="section collection-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag fade-up">Our World</span>
-          <h2 class="section-title fade-up">Supersport Collection</h2>
-          <p class="section-subtitle fade-up">Four pillars of automotive excellence</p>
+          <span class="section-tag fade-up" data-i18n="collection.tag">Our World</span>
+          <h2 class="section-title fade-up" data-i18n="collection.title">Supersport Collection</h2>
+          <p class="section-subtitle fade-up" data-i18n="collection.subtitle">Four pillars of automotive excellence</p>
         </div>
         <div class="collection-grid">
           <div class="collection-card fade-up" data-category="supercars">
             <div class="card-image-wrapper">
               <div class="card-image">
-                <img src="https://images.pexels.com/photos/17077313/pexels-photo-17077313.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Red Ferrari 488 Spider supercar" loading="lazy">
+                <img src="https://images.pexels.com/photos/17077313/pexels-photo-17077313.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Supercars" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Supercars</h3>
-              <p class="card-desc">The ultimate expression of road-legal performance</p>
-              <span class="card-count">18 Vehicles</span>
+              <h3 class="card-title" data-i18n="collection.supercars">Supercars</h3>
+              <p class="card-desc" data-i18n="collection.supercars.desc">The ultimate expression of road-legal performance</p>
+              <span class="card-count" data-i18n="collection.supercars.count">18 Vehicles</span>
             </div>
           </div>
           <div class="collection-card fade-up" data-category="hypercars">
             <div class="card-image-wrapper">
               <div class="card-image">
-                <img src="https://images.pexels.com/photos/30674495/pexels-photo-30674495.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek black supercar in urban setting" loading="lazy">
+                <img src="https://images.pexels.com/photos/30674495/pexels-photo-30674495.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hypercars" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Hypercars</h3>
-              <p class="card-desc">Beyond supercar. Beyond imagination.</p>
-              <span class="card-count">8 Vehicles</span>
+              <h3 class="card-title" data-i18n="collection.hypercars">Hypercars</h3>
+              <p class="card-desc" data-i18n="collection.hypercars.desc">Beyond supercar. Beyond imagination.</p>
+              <span class="card-count" data-i18n="collection.hypercars.count">8 Vehicles</span>
             </div>
           </div>
           <div class="collection-card fade-up" data-category="limited">
             <div class="card-image-wrapper">
               <div class="card-image">
-                <img src="https://images.pexels.com/photos/28758257/pexels-photo-28758257.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek red Ferrari on display" loading="lazy">
+                <img src="https://images.pexels.com/photos/28758257/pexels-photo-28758257.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Limited Editions" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Limited Editions</h3>
-              <p class="card-desc">Numbered. Exclusive. Unrepeatable.</p>
-              <span class="card-count">12 Vehicles</span>
+              <h3 class="card-title" data-i18n="collection.limited">Limited Editions</h3>
+              <p class="card-desc" data-i18n="collection.limited.desc">Numbered. Exclusive. Unrepeatable.</p>
+              <span class="card-count" data-i18n="collection.limited.count">12 Vehicles</span>
             </div>
           </div>
           <div class="collection-card fade-up" data-category="collector">
             <div class="card-image-wrapper">
               <div class="card-image">
-                <img src="https://images.pexels.com/photos/18108314/pexels-photo-18108314.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern expensive cars in luxury garage" loading="lazy">
+                <img src="https://images.pexels.com/photos/18108314/pexels-photo-18108314.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Collector Cars" loading="lazy">
               </div>
               <div class="card-glow"></div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Collector Cars</h3>
-              <p class="card-desc">Timeless icons. Investment-grade machines.</p>
-              <span class="card-count">9 Vehicles</span>
+              <h3 class="card-title" data-i18n="collection.collector">Collector Cars</h3>
+              <p class="card-desc" data-i18n="collection.collector.desc">Timeless icons. Investment-grade machines.</p>
+              <span class="card-count" data-i18n="collection.collector.count">9 Vehicles</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4: Featured Vehicles -->
+    <!-- Section 4: Featured Supersport Vehicles -->
     <section id="vehicles" class="section vehicles-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag fade-up">Featured</span>
-          <h2 class="section-title fade-up">Our Vehicles</h2>
-          <p class="section-subtitle fade-up">Handpicked icons of performance</p>
+          <span class="section-tag fade-up" data-i18n="vehicles.tag">Featured</span>
+          <h2 class="section-title fade-up" data-i18n="vehicles.title">Our Vehicles</h2>
+          <p class="section-subtitle fade-up" data-i18n="vehicles.subtitle">Handpicked icons of performance</p>
         </div>
       </div>
       <div class="vehicles-carousel">
         <div class="carousel-track" id="carouselTrack">
-
           <div class="vehicle-card">
             <div class="vehicle-image">
               <div class="vehicle-badge">New</div>
@@ -208,25 +210,15 @@
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Vortex GT</h3>
               <div class="vehicle-specs">
-                <div class="spec">
-                  <span class="spec-value">820</span>
-                  <span class="spec-label">HP</span>
-                </div>
+                <div class="spec"><span class="spec-value">820</span><span class="spec-label">HP</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">342</span>
-                  <span class="spec-label">KM/H</span>
-                </div>
+                <div class="spec"><span class="spec-value">342</span><span class="spec-label">KM/H</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">2.7</span>
-                  <span class="spec-label">0-100</span>
-                </div>
+                <div class="spec"><span class="spec-value">2.7</span><span class="spec-label">0-100</span></div>
               </div>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-
           <div class="vehicle-card">
             <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">Limited</div>
@@ -235,25 +227,15 @@
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Nemesis RSR</h3>
               <div class="vehicle-specs">
-                <div class="spec">
-                  <span class="spec-value">1,200</span>
-                  <span class="spec-label">HP</span>
-                </div>
+                <div class="spec"><span class="spec-value">1,200</span><span class="spec-label">HP</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">365</span>
-                  <span class="spec-label">KM/H</span>
-                </div>
+                <div class="spec"><span class="spec-value">365</span><span class="spec-label">KM/H</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">2.3</span>
-                  <span class="spec-label">0-100</span>
-                </div>
+                <div class="spec"><span class="spec-value">2.3</span><span class="spec-label">0-100</span></div>
               </div>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-
           <div class="vehicle-card">
             <div class="vehicle-image">
               <img src="https://images.pexels.com/photos/30806967/pexels-photo-30806967.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Phantom S" loading="lazy">
@@ -261,25 +243,15 @@
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Phantom S</h3>
               <div class="vehicle-specs">
-                <div class="spec">
-                  <span class="spec-value">710</span>
-                  <span class="spec-label">HP</span>
-                </div>
+                <div class="spec"><span class="spec-value">710</span><span class="spec-label">HP</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">325</span>
-                  <span class="spec-label">KM/H</span>
-                </div>
+                <div class="spec"><span class="spec-value">325</span><span class="spec-label">KM/H</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">2.9</span>
-                  <span class="spec-label">0-100</span>
-                </div>
+                <div class="spec"><span class="spec-value">2.9</span><span class="spec-label">0-100</span></div>
               </div>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-
           <div class="vehicle-card">
             <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">1 of 7</div>
@@ -288,25 +260,15 @@
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Zenith One</h3>
               <div class="vehicle-specs">
-                <div class="spec">
-                  <span class="spec-value">1,500</span>
-                  <span class="spec-label">HP</span>
-                </div>
+                <div class="spec"><span class="spec-value">1,500</span><span class="spec-label">HP</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">380</span>
-                  <span class="spec-label">KM/H</span>
-                </div>
+                <div class="spec"><span class="spec-value">380</span><span class="spec-label">KM/H</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">2.1</span>
-                  <span class="spec-label">0-100</span>
-                </div>
+                <div class="spec"><span class="spec-value">2.1</span><span class="spec-label">0-100</span></div>
               </div>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-
           <div class="vehicle-card">
             <div class="vehicle-image">
               <div class="vehicle-badge">Heritage</div>
@@ -315,25 +277,15 @@
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Classica 964</h3>
               <div class="vehicle-specs">
-                <div class="spec">
-                  <span class="spec-value">450</span>
-                  <span class="spec-label">HP</span>
-                </div>
+                <div class="spec"><span class="spec-value">450</span><span class="spec-label">HP</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">298</span>
-                  <span class="spec-label">KM/H</span>
-                </div>
+                <div class="spec"><span class="spec-value">298</span><span class="spec-label">KM/H</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">3.8</span>
-                  <span class="spec-label">0-100</span>
-                </div>
+                <div class="spec"><span class="spec-value">3.8</span><span class="spec-label">0-100</span></div>
               </div>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-
           <div class="vehicle-card">
             <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">Electric</div>
@@ -342,25 +294,15 @@
             <div class="vehicle-info">
               <h3 class="vehicle-name">Apex Volt Hyperion</h3>
               <div class="vehicle-specs">
-                <div class="spec">
-                  <span class="spec-value">1,800</span>
-                  <span class="spec-label">HP</span>
-                </div>
+                <div class="spec"><span class="spec-value">1,800</span><span class="spec-label">HP</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">370</span>
-                  <span class="spec-label">KM/H</span>
-                </div>
+                <div class="spec"><span class="spec-value">370</span><span class="spec-label">KM/H</span></div>
                 <div class="spec-divider"></div>
-                <div class="spec">
-                  <span class="spec-value">1.9</span>
-                  <span class="spec-label">0-100</span>
-                </div>
+                <div class="spec"><span class="spec-value">1.9</span><span class="spec-label">0-100</span></div>
               </div>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-
         </div>
         <div class="carousel-controls">
           <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">
@@ -374,23 +316,220 @@
       </div>
     </section>
 
+    <!-- Section 4b: Premium Vehicles (Normal Cars) -->
+    <section id="premium" class="section premium-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag fade-up" data-i18n="premium.tag">Premium Selection</span>
+          <h2 class="section-title fade-up" data-i18n="premium.title">Premium Vehicles</h2>
+          <p class="section-subtitle fade-up" data-i18n="premium.subtitle">Luxury performance for every day</p>
+        </div>
+        <div class="premium-filters fade-up">
+          <button class="filter-btn active" data-filter="all" data-i18n="premium.filter.all">All</button>
+          <button class="filter-btn" data-filter="sedan" data-i18n="premium.filter.sedan">Sedan</button>
+          <button class="filter-btn" data-filter="suv" data-i18n="premium.filter.suv">SUV</button>
+          <button class="filter-btn" data-filter="coupe" data-i18n="premium.filter.coupe">Coupe</button>
+          <button class="filter-btn" data-filter="electric" data-i18n="premium.filter.electric">Electric</button>
+        </div>
+        <div class="premium-grid" id="premiumGrid">
+
+          <div class="premium-card fade-up" data-type="coupe">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/3849556/pexels-photo-3849556.jpeg?auto=compress&cs=tinysrgb&w=800" alt="BMW M4 Competition" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">BMW</span>
+              <h3 class="premium-card-name">M4 Competition</h3>
+              <div class="premium-card-specs">
+                <span>510 HP</span>
+                <span>250 km/h</span>
+                <span>3.9s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2024</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="sedan">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/63767/pexels-photo-63767.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mercedes-AMG GT 63 S" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">Mercedes-AMG</span>
+              <h3 class="premium-card-name">GT 63 S</h3>
+              <div class="premium-card-specs">
+                <span>639 HP</span>
+                <span>315 km/h</span>
+                <span>3.2s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2024</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="suv">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Range Rover Sport SVR" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">Range Rover</span>
+              <h3 class="premium-card-name">Sport SVR</h3>
+              <div class="premium-card-specs">
+                <span>575 HP</span>
+                <span>283 km/h</span>
+                <span>4.3s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2024</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="suv">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/2612855/pexels-photo-2612855.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Porsche Cayenne GTS" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">Porsche</span>
+              <h3 class="premium-card-name">Cayenne GTS</h3>
+              <div class="premium-card-specs">
+                <span>460 HP</span>
+                <span>270 km/h</span>
+                <span>4.5s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2024</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="coupe">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/17476943/pexels-photo-17476943.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mercedes-AMG GT Coupe" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">Mercedes-AMG</span>
+              <h3 class="premium-card-name">GT Coup&eacute;</h3>
+              <div class="premium-card-specs">
+                <span>585 HP</span>
+                <span>318 km/h</span>
+                <span>3.4s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2025</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="sedan">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mercedes-Benz S-Class" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">Mercedes-Benz</span>
+              <h3 class="premium-card-name">S 580 4MATIC</h3>
+              <div class="premium-card-specs">
+                <span>503 HP</span>
+                <span>250 km/h</span>
+                <span>4.4s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2024</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="electric">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/19281437/pexels-photo-19281437.jpeg?auto=compress&cs=tinysrgb&w=800" alt="BMW i4 M50" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">BMW</span>
+              <h3 class="premium-card-name">i4 M50</h3>
+              <div class="premium-card-specs">
+                <span>544 HP</span>
+                <span>225 km/h</span>
+                <span>3.9s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2024</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="premium-card fade-up" data-type="electric">
+            <div class="premium-card-image">
+              <img src="https://images.pexels.com/photos/26954166/pexels-photo-26954166.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Porsche Taycan Turbo S" loading="lazy">
+              <div class="premium-card-overlay">
+                <a href="#inquiry" class="btn btn-small" data-i18n="premium.inquire">Inquire</a>
+              </div>
+            </div>
+            <div class="premium-card-info">
+              <span class="premium-card-brand">Porsche</span>
+              <h3 class="premium-card-name">Taycan Turbo S</h3>
+              <div class="premium-card-specs">
+                <span>761 HP</span>
+                <span>260 km/h</span>
+                <span>2.8s</span>
+              </div>
+              <div class="premium-card-meta">
+                <span class="premium-year">2025</span>
+                <span class="premium-price" data-i18n="premium.price">Price on Request</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Section 5: Motorsport DNA -->
     <section id="motorsport" class="section motorsport-section">
       <div class="motorsport-bg">
-        <img src="https://images.pexels.com/photos/12532098/pexels-photo-12532098.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Aerial view of race track" class="motorsport-bg-img" loading="lazy">
+        <img src="https://images.pexels.com/photos/12532098/pexels-photo-12532098.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Race track" class="motorsport-bg-img" loading="lazy">
         <div class="motorsport-bg-overlay"></div>
       </div>
       <div class="container">
         <div class="motorsport-content">
           <div class="motorsport-left fade-up">
-            <span class="section-tag">Born on the Track</span>
-            <h2 class="section-title motorsport-title">Motorsport<br><span class="text-red">DNA</span></h2>
-            <p class="motorsport-text">
+            <span class="section-tag" data-i18n="motorsport.tag">Born on the Track</span>
+            <h2 class="section-title motorsport-title" data-i18n="motorsport.title">Motorsport<br><span class="text-red">DNA</span></h2>
+            <p class="motorsport-text" data-i18n="motorsport.text1">
               Every Apex vehicle carries the genetic code of the racetrack. Our engineering
               philosophy is rooted in decades of motorsport competition — where milliseconds
               define victory and failure is measured in fractions.
             </p>
-            <p class="motorsport-text">
+            <p class="motorsport-text" data-i18n="motorsport.text2">
               From aerodynamic optimization in our wind tunnel to telemetry-driven suspension
               calibration, the technology that wins races is the same technology that powers
               every Apex machine.
@@ -400,19 +539,19 @@
             <div class="motorsport-stats">
               <div class="motorsport-stat">
                 <span class="motorsport-stat-number">23</span>
-                <span class="motorsport-stat-label">Championship Titles</span>
+                <span class="motorsport-stat-label" data-i18n="motorsport.stat1">Championship Titles</span>
               </div>
               <div class="motorsport-stat">
                 <span class="motorsport-stat-number">156</span>
-                <span class="motorsport-stat-label">Race Victories</span>
+                <span class="motorsport-stat-label" data-i18n="motorsport.stat2">Race Victories</span>
               </div>
               <div class="motorsport-stat">
                 <span class="motorsport-stat-number">47</span>
-                <span class="motorsport-stat-label">Lap Records</span>
+                <span class="motorsport-stat-label" data-i18n="motorsport.stat3">Lap Records</span>
               </div>
               <div class="motorsport-stat">
                 <span class="motorsport-stat-number">3.2G</span>
-                <span class="motorsport-stat-label">Maximum Lateral Force</span>
+                <span class="motorsport-stat-label" data-i18n="motorsport.stat4">Maximum Lateral Force</span>
               </div>
             </div>
           </div>
@@ -424,26 +563,26 @@
     <section id="limited" class="section limited-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag fade-up">Exclusive</span>
-          <h2 class="section-title fade-up">Limited Collection</h2>
-          <p class="section-subtitle fade-up">Rare machines for extraordinary drivers.</p>
+          <span class="section-tag fade-up" data-i18n="limited.tag">Exclusive</span>
+          <h2 class="section-title fade-up" data-i18n="limited.title">Limited Collection</h2>
+          <p class="section-subtitle fade-up" data-i18n="limited.subtitle">Rare machines for extraordinary drivers.</p>
         </div>
         <div class="limited-grid">
           <div class="limited-card limited-card--featured fade-up">
             <div class="limited-image">
               <div class="limited-number">01/07</div>
-              <img src="https://images.pexels.com/photos/30644946/pexels-photo-30644946.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Apex Zenith One hypercar" loading="lazy">
+              <img src="https://images.pexels.com/photos/30644946/pexels-photo-30644946.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Apex Zenith One" loading="lazy">
             </div>
             <div class="limited-info">
-              <span class="limited-tag">Hypercar | 1 of 7</span>
-              <h3 class="limited-name">Apex Zenith One</h3>
-              <p class="limited-desc">The ultimate expression of Apex engineering. 1,500 HP quad-turbo V12 with active aerodynamics and a full carbon fiber construction.</p>
+              <span class="limited-tag" data-i18n="limited.zenith.tag">Hypercar | 1 of 7</span>
+              <h3 class="limited-name" data-i18n="limited.zenith.name">Apex Zenith One</h3>
+              <p class="limited-desc" data-i18n="limited.zenith.desc">The ultimate expression of Apex engineering. 1,500 HP quad-turbo V12 with active aerodynamics and a full carbon fiber construction.</p>
               <div class="limited-specs-row">
                 <span>1,500 HP</span>
                 <span>380 km/h</span>
                 <span>2.1s 0-100</span>
               </div>
-              <a href="#inquiry" class="btn btn-primary">Private Inquiry</a>
+              <a href="#inquiry" class="btn btn-primary" data-i18n="limited.zenith.btn">Private Inquiry</a>
             </div>
           </div>
           <div class="limited-card fade-up">
@@ -452,10 +591,10 @@
               <img src="https://images.pexels.com/photos/11629361/pexels-photo-11629361.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Nemesis RSR" loading="lazy">
             </div>
             <div class="limited-info">
-              <span class="limited-tag">Supercar | 1 of 25</span>
-              <h3 class="limited-name">Apex Nemesis RSR</h3>
-              <p class="limited-desc">Track-bred. Road-legal. Uncompromising in every dimension.</p>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <span class="limited-tag" data-i18n="limited.nemesis.tag">Supercar | 1 of 25</span>
+              <h3 class="limited-name" data-i18n="limited.nemesis.name">Apex Nemesis RSR</h3>
+              <p class="limited-desc" data-i18n="limited.nemesis.desc">Track-bred. Road-legal. Uncompromising in every dimension.</p>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
           <div class="limited-card fade-up">
@@ -464,10 +603,10 @@
               <img src="https://images.pexels.com/photos/29851072/pexels-photo-29851072.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apex Volt Hyperion" loading="lazy">
             </div>
             <div class="limited-info">
-              <span class="limited-tag">Electric | 1 of 50</span>
-              <h3 class="limited-name">Apex Volt Hyperion</h3>
-              <p class="limited-desc">The future of performance. 1,800 HP of pure electric fury.</p>
-              <a href="#inquiry" class="btn btn-small">Inquire</a>
+              <span class="limited-tag" data-i18n="limited.volt.tag">Electric | 1 of 50</span>
+              <h3 class="limited-name" data-i18n="limited.volt.name">Apex Volt Hyperion</h3>
+              <p class="limited-desc" data-i18n="limited.volt.desc">The future of performance. 1,800 HP of pure electric fury.</p>
+              <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
         </div>
@@ -478,54 +617,54 @@
     <section id="lifestyle" class="section lifestyle-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag fade-up">Experience</span>
-          <h2 class="section-title fade-up">Apex Lifestyle</h2>
-          <p class="section-subtitle fade-up">More than machines. A way of life.</p>
+          <span class="section-tag fade-up" data-i18n="lifestyle.tag">Experience</span>
+          <h2 class="section-title fade-up" data-i18n="lifestyle.title">Apex Lifestyle</h2>
+          <p class="section-subtitle fade-up" data-i18n="lifestyle.subtitle">More than machines. A way of life.</p>
         </div>
         <div class="lifestyle-grid">
           <div class="lifestyle-item lifestyle-item--large fade-up">
             <div class="lifestyle-image">
-              <img src="https://images.pexels.com/photos/17580107/pexels-photo-17580107.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Supercar at night with LED lights" loading="lazy">
+              <img src="https://images.pexels.com/photos/17580107/pexels-photo-17580107.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Night Drives" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
-              <h3>Night Drives</h3>
-              <p>The city belongs to those who own the night</p>
+              <h3 data-i18n="lifestyle.night.title">Night Drives</h3>
+              <p data-i18n="lifestyle.night.desc">The city belongs to those who own the night</p>
             </div>
           </div>
           <div class="lifestyle-item fade-up">
             <div class="lifestyle-image">
-              <img src="https://images.pexels.com/photos/33998685/pexels-photo-33998685.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury sports cars at night in Monaco" loading="lazy">
+              <img src="https://images.pexels.com/photos/33998685/pexels-photo-33998685.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Monaco Nights" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
-              <h3>Monaco Nights</h3>
-              <p>Where prestige meets the Mediterranean</p>
+              <h3 data-i18n="lifestyle.monaco.title">Monaco Nights</h3>
+              <p data-i18n="lifestyle.monaco.desc">Where prestige meets the Mediterranean</p>
             </div>
           </div>
           <div class="lifestyle-item fade-up">
             <div class="lifestyle-image">
-              <img src="https://images.pexels.com/photos/29252112/pexels-photo-29252112.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Aerial view of Formula One race car on track" loading="lazy">
+              <img src="https://images.pexels.com/photos/29252112/pexels-photo-29252112.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Track Days" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
-              <h3>Track Days</h3>
-              <p>Unleash the full potential</p>
+              <h3 data-i18n="lifestyle.track.title">Track Days</h3>
+              <p data-i18n="lifestyle.track.desc">Unleash the full potential</p>
             </div>
           </div>
           <div class="lifestyle-item fade-up">
             <div class="lifestyle-image">
-              <img src="https://images.pexels.com/photos/9139588/pexels-photo-9139588.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury cars inside a modern garage" loading="lazy">
+              <img src="https://images.pexels.com/photos/9139588/pexels-photo-9139588.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Private Collection" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
-              <h3>Private Collection</h3>
-              <p>Your sanctuary. Your machines.</p>
+              <h3 data-i18n="lifestyle.collection.title">Private Collection</h3>
+              <p data-i18n="lifestyle.collection.desc">Your sanctuary. Your machines.</p>
             </div>
           </div>
           <div class="lifestyle-item fade-up">
             <div class="lifestyle-image">
-              <img src="https://images.pexels.com/photos/5288701/pexels-photo-5288701.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Supercar with picturesque scenery" loading="lazy">
+              <img src="https://images.pexels.com/photos/5288701/pexels-photo-5288701.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Open Roads" loading="lazy">
             </div>
             <div class="lifestyle-overlay">
-              <h3>Open Roads</h3>
-              <p>Freedom defined by horsepower</p>
+              <h3 data-i18n="lifestyle.roads.title">Open Roads</h3>
+              <p data-i18n="lifestyle.roads.desc">Freedom defined by horsepower</p>
             </div>
           </div>
         </div>
@@ -537,43 +676,18 @@
       <div class="container">
         <div class="about-content">
           <div class="about-left fade-up">
-            <span class="section-tag">Our Story</span>
-            <h2 class="section-title">About<br><span class="text-red">Apex Motors</span></h2>
+            <span class="section-tag" data-i18n="about.tag">Our Story</span>
+            <h2 class="section-title" data-i18n="about.title">About<br><span class="text-red">Apex Motors</span></h2>
           </div>
           <div class="about-right fade-up">
-            <p class="about-text">
-              Founded on the belief that automotive excellence knows no boundaries,
-              Apex Motors curates the world's most extraordinary supersport vehicles.
-              We are not a dealership. We are custodians of automotive art.
-            </p>
-            <p class="about-text">
-              Our team of specialists traverses the globe to source vehicles that
-              represent the absolute pinnacle of engineering, design, and exclusivity.
-              Every machine in our collection has been meticulously verified, documented,
-              and prepared to the Apex Standard.
-            </p>
-            <p class="about-text">
-              From the moment you step into our world, you'll experience a level of
-              service and attention that matches the extraordinary nature of the vehicles
-              we represent. This is the Apex experience.
-            </p>
+            <p class="about-text" data-i18n="about.text1">Founded on the belief that automotive excellence knows no boundaries, Apex Motors curates the world's most extraordinary supersport vehicles. We are not a dealership. We are custodians of automotive art.</p>
+            <p class="about-text" data-i18n="about.text2">Our team of specialists traverses the globe to source vehicles that represent the absolute pinnacle of engineering, design, and exclusivity. Every machine in our collection has been meticulously verified, documented, and prepared to the Apex Standard.</p>
+            <p class="about-text" data-i18n="about.text3">From the moment you step into our world, you'll experience a level of service and attention that matches the extraordinary nature of the vehicles we represent. This is the Apex experience.</p>
             <div class="about-values">
-              <div class="value">
-                <span class="value-number">01</span>
-                <span class="value-text">Uncompromising Quality</span>
-              </div>
-              <div class="value">
-                <span class="value-number">02</span>
-                <span class="value-text">Absolute Discretion</span>
-              </div>
-              <div class="value">
-                <span class="value-number">03</span>
-                <span class="value-text">Global Reach</span>
-              </div>
-              <div class="value">
-                <span class="value-number">04</span>
-                <span class="value-text">Passion-Driven</span>
-              </div>
+              <div class="value"><span class="value-number">01</span><span class="value-text" data-i18n="about.value1">Uncompromising Quality</span></div>
+              <div class="value"><span class="value-number">02</span><span class="value-text" data-i18n="about.value2">Absolute Discretion</span></div>
+              <div class="value"><span class="value-number">03</span><span class="value-text" data-i18n="about.value3">Global Reach</span></div>
+              <div class="value"><span class="value-number">04</span><span class="value-text" data-i18n="about.value4">Passion-Driven</span></div>
             </div>
           </div>
         </div>
@@ -582,29 +696,24 @@
 
     <!-- Section 8: Private Inquiry -->
     <section id="inquiry" class="section inquiry-section">
-      <div class="inquiry-bg">
-        <div class="inquiry-grid-lines"></div>
-      </div>
+      <div class="inquiry-bg"><div class="inquiry-grid-lines"></div></div>
       <div class="container">
         <div class="inquiry-content">
           <div class="inquiry-left fade-up">
-            <span class="section-tag">Contact</span>
-            <h2 class="section-title">Start Your<br><span class="text-red">Apex Experience</span></h2>
-            <p class="inquiry-text">
-              Every journey begins with a conversation. Share your vision with us,
-              and our specialists will guide you to the perfect machine.
-            </p>
+            <span class="section-tag" data-i18n="inquiry.tag">Contact</span>
+            <h2 class="section-title" data-i18n="inquiry.title">Start Your<br><span class="text-red">Apex Experience</span></h2>
+            <p class="inquiry-text" data-i18n="inquiry.text">Every journey begins with a conversation. Share your vision with us, and our specialists will guide you to the perfect machine.</p>
             <div class="inquiry-details">
               <div class="inquiry-detail">
-                <span class="detail-label">Email</span>
+                <span class="detail-label" data-i18n="inquiry.email.label">Email</span>
                 <span class="detail-value">private@apexmotors.com</span>
               </div>
               <div class="inquiry-detail">
-                <span class="detail-label">Phone</span>
+                <span class="detail-label" data-i18n="inquiry.phone.label">Phone</span>
                 <span class="detail-value">+41 44 000 00 00</span>
               </div>
               <div class="inquiry-detail">
-                <span class="detail-label">Location</span>
+                <span class="detail-label" data-i18n="inquiry.location.label">Location</span>
                 <span class="detail-value">Zurich, Switzerland</span>
               </div>
             </div>
@@ -612,23 +721,23 @@
           <div class="inquiry-right fade-up">
             <form class="inquiry-form" id="inquiryForm" novalidate>
               <div class="form-group">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                <label for="name" class="form-label" data-i18n="inquiry.form.name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" data-i18n-placeholder="inquiry.form.name.ph" required>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                  <label for="email" class="form-label" data-i18n="inquiry.form.email">Email</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" data-i18n-placeholder="inquiry.form.email.ph" required>
                 </div>
                 <div class="form-group">
-                  <label for="phone" class="form-label">Phone</label>
-                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 234 567 890">
+                  <label for="phone" class="form-label" data-i18n="inquiry.form.phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 234 567 890" data-i18n-placeholder="inquiry.form.phone.ph">
                 </div>
               </div>
               <div class="form-group">
-                <label for="country" class="form-label">Country</label>
+                <label for="country" class="form-label" data-i18n="inquiry.form.country">Country</label>
                 <select id="country" name="country" class="form-input form-select">
-                  <option value="">Select your country</option>
+                  <option value="" data-i18n="inquiry.form.country.ph">Select your country</option>
                   <option value="CH">Switzerland</option>
                   <option value="DE">Germany</option>
                   <option value="AT">Austria</option>
@@ -645,24 +754,29 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="vehicle" class="form-label">Vehicle of Interest</label>
+                <label for="vehicle" class="form-label" data-i18n="inquiry.form.vehicle">Vehicle of Interest</label>
                 <select id="vehicle" name="vehicle" class="form-input form-select">
-                  <option value="">Select a vehicle</option>
+                  <option value="" data-i18n="inquiry.form.vehicle.ph">Select a vehicle</option>
                   <option value="vortex">Apex Vortex GT</option>
                   <option value="nemesis">Apex Nemesis RSR</option>
                   <option value="phantom">Apex Phantom S</option>
                   <option value="zenith">Apex Zenith One</option>
                   <option value="classica">Apex Classica 964</option>
                   <option value="volt">Apex Volt Hyperion</option>
-                  <option value="other">Other / General Inquiry</option>
+                  <option value="bmw-m4">BMW M4 Competition</option>
+                  <option value="amg-gt63">Mercedes-AMG GT 63 S</option>
+                  <option value="range-rover">Range Rover Sport SVR</option>
+                  <option value="cayenne">Porsche Cayenne GTS</option>
+                  <option value="taycan">Porsche Taycan Turbo S</option>
+                  <option value="other" data-i18n="inquiry.form.vehicle.other">Other / General Inquiry</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="message" class="form-label">Message <span class="form-optional">(Optional)</span></label>
-                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about your vision..." rows="4"></textarea>
+                <label for="message" class="form-label"><span data-i18n="inquiry.form.message">Message</span> <span class="form-optional" data-i18n="inquiry.form.message.optional">(Optional)</span></label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about your vision..." data-i18n-placeholder="inquiry.form.message.ph" rows="4"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
-              <p class="form-disclaimer">Your information is treated with absolute discretion.</p>
+              <button type="submit" class="btn btn-primary btn-full" data-i18n="inquiry.form.submit">Submit Inquiry</button>
+              <p class="form-disclaimer" data-i18n="inquiry.form.disclaimer">Your information is treated with absolute discretion.</p>
             </form>
           </div>
         </div>
@@ -680,34 +794,34 @@
             <span class="logo-apex">APEX</span>
             <span class="logo-motors">MOTORS</span>
           </div>
-          <p class="footer-tagline">Where Performance Meets Prestige</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Where Performance Meets Prestige</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
-            <h4 class="footer-col-title">Collection</h4>
-            <a href="#collection">Supercars</a>
-            <a href="#collection">Hypercars</a>
-            <a href="#collection">Limited Editions</a>
-            <a href="#collection">Collector Cars</a>
+            <h4 class="footer-col-title" data-i18n="footer.col.collection">Collection</h4>
+            <a href="#collection" data-i18n="footer.link.supercars">Supercars</a>
+            <a href="#collection" data-i18n="footer.link.hypercars">Hypercars</a>
+            <a href="#collection" data-i18n="footer.link.limited">Limited Editions</a>
+            <a href="#collection" data-i18n="footer.link.collector">Collector Cars</a>
           </div>
           <div class="footer-col">
-            <h4 class="footer-col-title">Company</h4>
-            <a href="#about">About Us</a>
-            <a href="#motorsport">Motorsport DNA</a>
-            <a href="#lifestyle">Lifestyle</a>
-            <a href="#inquiry">Contact</a>
+            <h4 class="footer-col-title" data-i18n="footer.col.company">Company</h4>
+            <a href="#about" data-i18n="footer.link.about">About Us</a>
+            <a href="#motorsport" data-i18n="footer.link.motorsport">Motorsport DNA</a>
+            <a href="#lifestyle" data-i18n="footer.link.lifestyle">Lifestyle</a>
+            <a href="#inquiry" data-i18n="footer.link.contact">Contact</a>
           </div>
           <div class="footer-col">
-            <h4 class="footer-col-title">Legal</h4>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-            <a href="#">Imprint</a>
+            <h4 class="footer-col-title" data-i18n="footer.col.legal">Legal</h4>
+            <a href="#" data-i18n="footer.link.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.link.terms">Terms of Service</a>
+            <a href="#" data-i18n="footer.link.cookies">Cookie Policy</a>
+            <a href="#" data-i18n="footer.link.imprint">Imprint</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Apex Motors. All rights reserved.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Apex Motors. All rights reserved.</p>
         <div class="footer-social">
           <a href="#" aria-label="Instagram" class="social-link">IG</a>
           <a href="#" aria-label="YouTube" class="social-link">YT</a>
@@ -726,6 +840,7 @@
     </div>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

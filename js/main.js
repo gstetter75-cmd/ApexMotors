@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroParticles();
   initHeroCounters();
   initCarousel();
+  initPremiumFilters();
   initInquiryForm();
   initSmoothScroll();
   initParallaxEffects();
   initCinematicCursor();
+  initI18n();
 });
 
 /* ---------- Preloader ---------- */
@@ -345,6 +347,43 @@ function initCarousel() {
     autoSlide = setInterval(() => {
       goToSlide((currentIndex + 1) % totalSlides);
     }, 6000);
+  });
+}
+
+/* ---------- Premium Filters ---------- */
+function initPremiumFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.premium-card');
+
+  if (!filterBtns.length || !cards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Filter cards with animation
+      cards.forEach(card => {
+        const type = card.dataset.type;
+        if (filter === 'all' || type === filter) {
+          card.classList.remove('hidden');
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          requestAnimationFrame(() => {
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          });
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => card.classList.add('hidden'), 300);
+        }
+      });
+    });
   });
 }
 
