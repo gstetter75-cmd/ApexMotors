@@ -57,8 +57,8 @@ const vehicleData = [
       transmission: "6-Speed Sequential"
     },
     description: {
-      en: "Track-bred and road-legal, the Nemesis RSR is an uncompromising machine born from decades of motorsport DNA. Its naturally aspirated V10, boosted by twin turbochargers, produces a staggering 1,200 horsepower. Limited to just 25 units worldwide, each one is hand-assembled over 400 hours by our master technicians.",
-      de: "Rennstrecken-geboren und stra\u00dfenzugelassen \u2014 der Nemesis RSR ist eine kompromisslose Maschine, geboren aus Jahrzehnten Motorsport-DNA. Sein Saugmotor-V10, verst\u00e4rkt durch Twin-Turbolader, leistet atemberaubende 1.200 PS. Limitiert auf nur 25 Exemplare weltweit, wird jedes einzelne in \u00fcber 400 Stunden Handarbeit von unseren Meistertechnikern montiert."
+      en: "Track-bred and road-legal, the Nemesis RSR is an uncompromising machine born from decades of motorsport DNA. Its naturally aspirated V10, boosted by twin turbochargers, produces a staggering 1,200 horsepower. Limited to just 25 units worldwide, each one was hand-assembled over 400 hours. Exclusively sourced through Apex Motors.",
+      de: "Rennstrecken-geboren und stra\u00dfenzugelassen \u2014 der Nemesis RSR ist eine kompromisslose Maschine, geboren aus Jahrzehnten Motorsport-DNA. Sein Saugmotor-V10, verst\u00e4rkt durch Twin-Turbolader, leistet atemberaubende 1.200 PS. Limitiert auf nur 25 Exemplare weltweit, wurde jedes einzelne in \u00fcber 400 Stunden Handarbeit montiert. Exklusiv \u00fcber Apex Motors erh\u00e4ltlich."
     }
   },
   {

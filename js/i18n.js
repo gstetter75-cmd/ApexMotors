@@ -28,9 +28,9 @@ const translations = {
     "hero.stat3.label": "World Records",
 
     // Brand
-    "brand.headline": "We don't build cars.<br>We engineer <span class=\"text-red\">obsessions.</span>",
-    "brand.text1": "Apex Motors was born from a singular vision — to create machines that transcend the boundaries of performance and luxury. Every vehicle in our collection represents the absolute pinnacle of automotive engineering, handcrafted by masters who understand that true prestige lies in the details.",
-    "brand.text2": "From the carbon fiber monocoque to the hand-stitched leather interior, every element is a testament to uncompromising excellence. This is not merely transportation. This is a statement of who you are.",
+    "brand.headline": "We don't sell cars.<br>We curate <span class=\"text-red\">obsessions.</span>",
+    "brand.text1": "Apex Motors was born from a singular vision — to source and present the world's most extraordinary machines. Every vehicle in our collection has been hand-selected, meticulously inspected, and prepared to the highest standard by specialists who understand that true prestige lies in the details.",
+    "brand.text2": "From rare hypercars to exclusive limited editions, we connect discerning collectors with automotive masterpieces that transcend ordinary ownership. This is not merely a transaction. This is an experience.",
     "brand.signature": "The Apex Standard",
 
     // Collection
@@ -71,8 +71,8 @@ const translations = {
     // Motorsport
     "motorsport.tag": "Born on the Track",
     "motorsport.title": "Motorsport<br><span class=\"text-red\">DNA</span>",
-    "motorsport.text1": "Every Apex vehicle carries the genetic code of the racetrack. Our engineering philosophy is rooted in decades of motorsport competition — where milliseconds define victory and failure is measured in fractions.",
-    "motorsport.text2": "From aerodynamic optimization in our wind tunnel to telemetry-driven suspension calibration, the technology that wins races is the same technology that powers every Apex machine.",
+    "motorsport.text1": "Every vehicle in our collection carries the genetic code of the racetrack. We exclusively source machines whose engineering philosophy is rooted in decades of motorsport competition — where milliseconds define victory and failure is measured in fractions.",
+    "motorsport.text2": "From aerodynamic masterpieces to telemetry-optimized suspension systems, the technology that wins races lives in every machine we present. Our specialists verify the provenance and performance pedigree of each vehicle.",
     "motorsport.stat1": "Championship Titles",
     "motorsport.stat2": "Race Victories",
     "motorsport.stat3": "Lap Records",
@@ -84,7 +84,7 @@ const translations = {
     "limited.subtitle": "Rare machines for extraordinary drivers.",
     "limited.zenith.tag": "Hypercar | 1 of 7",
     "limited.zenith.name": "Apex Zenith One",
-    "limited.zenith.desc": "The ultimate expression of Apex engineering. 1,500 HP quad-turbo V12 with active aerodynamics and a full carbon fiber construction.",
+    "limited.zenith.desc": "The ultimate hypercar. 1,500 HP quad-turbo V12 with active aerodynamics and full carbon fiber construction. One of only 7 ever made — exclusively available through Apex Motors.",
     "limited.zenith.btn": "Private Inquiry",
     "limited.nemesis.tag": "Supercar | 1 of 25",
     "limited.nemesis.name": "Apex Nemesis RSR",
@@ -190,9 +190,9 @@ const translations = {
     "hero.stat3.label": "Weltrekorde",
 
     // Brand
-    "brand.headline": "Wir bauen keine Autos.<br>Wir erschaffen <span class=\"text-red\">Obsessionen.</span>",
-    "brand.text1": "Apex Motors wurde aus einer einzigen Vision geboren — Maschinen zu erschaffen, die die Grenzen von Performance und Luxus \u00FCberschreiten. Jedes Fahrzeug in unserer Kollektion repr\u00E4sentiert den absoluten Gipfel automobiler Ingenieurskunst, handgefertigt von Meistern, die verstehen, dass wahres Prestige im Detail liegt.",
-    "brand.text2": "Vom Carbon-Monocoque bis zum handgen\u00E4hten Lederinterieur — jedes Element zeugt von kompromissloser Exzellenz. Das ist nicht blo\u00DF Transport. Das ist ein Statement, wer Sie sind.",
+    "brand.headline": "Wir verkaufen keine Autos.<br>Wir kuratieren <span class=\"text-red\">Obsessionen.</span>",
+    "brand.text1": "Apex Motors wurde aus einer einzigen Vision geboren — die au\u00DFergew\u00F6hnlichsten Maschinen der Welt zu finden und zu pr\u00E4sentieren. Jedes Fahrzeug in unserer Kollektion wurde handverlesen, akribisch gepr\u00FCft und von Spezialisten auf h\u00F6chstem Niveau vorbereitet, die verstehen, dass wahres Prestige im Detail liegt.",
+    "brand.text2": "Von seltenen Hypercars bis zu exklusiven Limited Editions — wir verbinden anspruchsvolle Sammler mit automobilen Meisterwerken, die gew\u00F6hnlichen Besitz transzendieren. Das ist nicht blo\u00DF eine Transaktion. Das ist ein Erlebnis.",
     "brand.signature": "Der Apex Standard",
 
     // Collection
@@ -233,8 +233,8 @@ const translations = {
     // Motorsport
     "motorsport.tag": "Geboren auf der Rennstrecke",
     "motorsport.title": "Motorsport<br><span class=\"text-red\">DNA</span>",
-    "motorsport.text1": "Jedes Apex Fahrzeug tr\u00E4gt den genetischen Code der Rennstrecke. Unsere Ingenieurphilosophie wurzelt in Jahrzehnten des Motorsportwettbewerbs — wo Millisekunden \u00FCber Sieg entscheiden und Versagen in Bruchteilen gemessen wird.",
-    "motorsport.text2": "Von der Aerodynamik-Optimierung im Windkanal bis zur telemetriegest\u00FCtzten Fahrwerkskalibrierung — die Technologie, die Rennen gewinnt, ist dieselbe Technologie, die jede Apex Maschine antreibt.",
+    "motorsport.text1": "Jedes Fahrzeug in unserer Kollektion tr\u00E4gt den genetischen Code der Rennstrecke. Wir f\u00FChren ausschlie\u00DFlich Maschinen, deren Ingenieurphilosophie in Jahrzehnten des Motorsportwettbewerbs wurzelt — wo Millisekunden \u00FCber Sieg entscheiden und Versagen in Bruchteilen gemessen wird.",
+    "motorsport.text2": "Von aerodynamischen Meisterwerken bis zu telemetrieoptimierter Fahrwerkstechnik — die Technologie, die Rennen gewinnt, lebt in jeder Maschine, die wir pr\u00E4sentieren. Unsere Spezialisten verifizieren die Herkunft und den Performance-Stammbaum jedes Fahrzeugs.",
     "motorsport.stat1": "Meistertitel",
     "motorsport.stat2": "Rennsiege",
     "motorsport.stat3": "Rundenrekorde",
@@ -246,7 +246,7 @@ const translations = {
     "limited.subtitle": "Seltene Maschinen f\u00FCr au\u00DFergew\u00F6hnliche Fahrer.",
     "limited.zenith.tag": "Hypercar | 1 von 7",
     "limited.zenith.name": "Apex Zenith One",
-    "limited.zenith.desc": "Der ultimative Ausdruck von Apex Engineering. 1.500 PS Quad-Turbo V12 mit aktiver Aerodynamik und vollst\u00E4ndiger Carbonfaser-Konstruktion.",
+    "limited.zenith.desc": "Der ultimative Hypercar. 1.500 PS Quad-Turbo V12 mit aktiver Aerodynamik und vollst\u00E4ndiger Carbonfaser-Konstruktion. Einer von nur 7 jemals gebauten — exklusiv \u00FCber Apex Motors erh\u00E4ltlich.",
     "limited.zenith.btn": "Privatanfrage",
     "limited.nemesis.tag": "Supercar | 1 von 25",
     "limited.nemesis.name": "Apex Nemesis RSR",
