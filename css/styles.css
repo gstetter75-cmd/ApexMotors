@@ -2196,6 +2196,54 @@ button {
   filter: brightness(0.7) contrast(1.15) saturate(1);
 }
 
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-video {
+    display: none;
+  }
+
+  .hero-particles,
+  .hero-light-streaks,
+  .particle {
+    display: none;
+  }
+
+  .fade-up {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-welcome,
+  .hero-subline,
+  .hero-buttons,
+  .hero-scroll-indicator,
+  .hero-stats,
+  .headline-line {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .preloader-fill {
+    width: 100%;
+    animation: none;
+  }
+
+  .scroll-line {
+    animation: none;
+    opacity: 0.5;
+  }
+}
+
 /* ---------- Print ---------- */
 @media print {
   #navbar, .hero-video-bg, .hero-scroll-indicator, .preloader {

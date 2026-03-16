@@ -3,18 +3,23 @@
    Cinematic animations, smooth scrolling, and luxury micro-interactions
    ========================================================================== */
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 document.addEventListener('DOMContentLoaded', () => {
   initPreloader();
   initNavigation();
   initScrollAnimations();
-  initHeroParticles();
+  initVideoFallback();
+  if (!prefersReducedMotion) {
+    initHeroParticles();
+    initParallaxEffects();
+    initCinematicCursor();
+  }
   initHeroCounters();
   initCarousel();
   initPremiumFilters();
   initInquiryForm();
   initSmoothScroll();
-  initParallaxEffects();
-  initCinematicCursor();
   initI18n();
 });
 
@@ -141,6 +146,36 @@ function initScrollAnimations() {
   });
 
   fadeElements.forEach(el => observer.observe(el));
+}
+
+/* ---------- Video Fallback ---------- */
+function initVideoFallback() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+
+  if (prefersReducedMotion) {
+    video.removeAttribute('autoplay');
+    video.pause();
+    video.style.display = 'none';
+    return;
+  }
+
+  const connection = navigator.connection || navigator.mozConnection;
+  if (connection && (connection.saveData || connection.effectiveType === '2g' || connection.effectiveType === 'slow-2g')) {
+    video.removeAttribute('autoplay');
+    video.pause();
+    video.style.display = 'none';
+    return;
+  }
+
+  // Timeout: if video doesn't load in 5s, hide it and rely on poster
+  const loadTimer = setTimeout(() => {
+    if (video.readyState < 3) {
+      video.style.display = 'none';
+    }
+  }, 5000);
+
+  video.addEventListener('canplay', () => clearTimeout(loadTimer), { once: true });
 }
 
 /* ---------- Hero Particles ---------- */
@@ -337,17 +372,19 @@ function initCarousel() {
 
   createDots();
 
-  // Auto-advance
-  let autoSlide = setInterval(() => {
-    goToSlide((currentIndex + 1) % totalSlides);
-  }, 6000);
-
-  track.addEventListener('mouseenter', () => clearInterval(autoSlide));
-  track.addEventListener('mouseleave', () => {
-    autoSlide = setInterval(() => {
+  // Auto-advance (disabled for reduced motion)
+  if (!prefersReducedMotion) {
+    let autoSlide = setInterval(() => {
       goToSlide((currentIndex + 1) % totalSlides);
     }, 6000);
-  });
+
+    track.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    track.addEventListener('mouseleave', () => {
+      autoSlide = setInterval(() => {
+        goToSlide((currentIndex + 1) % totalSlides);
+      }, 6000);
+    });
+  }
 }
 
 /* ---------- Premium Filters ---------- */

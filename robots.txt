@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gstetter75-cmd.github.io/ApexMotors/sitemap.xml
