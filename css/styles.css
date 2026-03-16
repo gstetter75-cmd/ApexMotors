@@ -1711,6 +1711,257 @@ button {
   color: var(--red);
 }
 
+/* Modal Detail Layout */
+.modal-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0;
+  min-height: 500px;
+}
+
+.modal-gallery {
+  background: var(--midnight);
+  padding: 24px;
+}
+
+.modal-gallery-main {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--carbon);
+  margin-bottom: 12px;
+}
+
+.modal-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  filter: brightness(0.85) contrast(1.05);
+}
+
+.modal-gallery-thumbs {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-thumb {
+  width: 72px;
+  height: 54px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+  background: none;
+}
+
+.modal-thumb.active,
+.modal-thumb:hover {
+  border-color: var(--red);
+  opacity: 1;
+}
+
+.modal-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-details {
+  padding: clamp(24px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-brand {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.modal-vehicle-name {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 6px 0 12px;
+  line-height: 1.15;
+}
+
+.modal-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.modal-year {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--white-50);
+}
+
+.modal-limited {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--red);
+  padding: 4px 12px;
+  border: 1px solid rgba(225, 6, 0, 0.3);
+  border-radius: 2px;
+  letter-spacing: 0.04em;
+}
+
+.modal-description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--white-50);
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.modal-specs {
+  margin-bottom: 24px;
+}
+
+.modal-specs-title {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white-70);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--white-08);
+}
+
+.modal-specs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.modal-spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--white-04);
+}
+
+.modal-spec-row:last-child {
+  border-bottom: none;
+}
+
+.modal-spec-label {
+  font-size: 12px;
+  color: var(--white-30);
+  letter-spacing: 0.04em;
+}
+
+.modal-spec-value {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--white-08);
+}
+
+.modal-price {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white-50);
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.modal-cta {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .modal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-gallery {
+    padding: 16px;
+  }
+
+  .modal-gallery-main {
+    aspect-ratio: 16 / 10;
+  }
+
+  .modal-details {
+    padding: 20px;
+  }
+}
+
+/* ---------- Accessibility ---------- */
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 16px;
+  z-index: 10001;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--red);
+  padding: 12px 24px;
+  border-radius: 2px;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* ---------- ANIMATIONS ---------- */
 .fade-up {
   opacity: 0;

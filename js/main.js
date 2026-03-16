@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPremiumFilters();
   initInquiryForm();
   initSmoothScroll();
+  initVehicleModal();
   initI18n();
 });
 

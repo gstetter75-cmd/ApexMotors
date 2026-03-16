@@ -373,6 +373,14 @@ function setLanguage(lang) {
     }
   });
 
+  // Announce language change to screen readers
+  const liveRegion = document.getElementById('ariaLive');
+  if (liveRegion) {
+    liveRegion.textContent = lang === 'de'
+      ? 'Sprache auf Deutsch ge\u00e4ndert'
+      : 'Language changed to English';
+  }
+
   // Update all [data-i18n-aria] elements
   document.querySelectorAll('[data-i18n-aria]').forEach(el => {
     const key = el.getAttribute('data-i18n-aria');

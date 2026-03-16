@@ -58,6 +58,8 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="#brand" class="skip-link">Skip to content</a>
+  <div id="ariaLive" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
   <!-- Preloader -->
   <div id="preloader">
@@ -257,7 +259,7 @@
       </div>
       <div class="vehicles-carousel">
         <div class="carousel-track" id="carouselTrack">
-          <div class="vehicle-card">
+          <div class="vehicle-card" data-vehicle-id="vortex-gt">
             <div class="vehicle-image">
               <div class="vehicle-badge">New</div>
               <img src="https://images.pexels.com/photos/9130190/pexels-photo-9130190.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -276,7 +278,7 @@
               <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-          <div class="vehicle-card">
+          <div class="vehicle-card" data-vehicle-id="nemesis-rsr">
             <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">Limited</div>
               <img src="https://images.pexels.com/photos/11629361/pexels-photo-11629361.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -295,7 +297,7 @@
               <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-          <div class="vehicle-card">
+          <div class="vehicle-card" data-vehicle-id="phantom-s">
             <div class="vehicle-image">
               <img src="https://images.pexels.com/photos/30806967/pexels-photo-30806967.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/30806967/pexels-photo-30806967.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/30806967/pexels-photo-30806967.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/30806967/pexels-photo-30806967.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -313,7 +315,7 @@
               <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-          <div class="vehicle-card">
+          <div class="vehicle-card" data-vehicle-id="zenith-one">
             <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">1 of 7</div>
               <img src="https://images.pexels.com/photos/30644946/pexels-photo-30644946.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -332,7 +334,7 @@
               <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-          <div class="vehicle-card">
+          <div class="vehicle-card" data-vehicle-id="classica-964">
             <div class="vehicle-image">
               <div class="vehicle-badge">Heritage</div>
               <img src="https://images.pexels.com/photos/17377922/pexels-photo-17377922.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -351,7 +353,7 @@
               <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-          <div class="vehicle-card">
+          <div class="vehicle-card" data-vehicle-id="volt-hyperion">
             <div class="vehicle-image">
               <div class="vehicle-badge badge-limited">Electric</div>
               <img src="https://images.pexels.com/photos/29851072/pexels-photo-29851072.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -400,7 +402,7 @@
         </div>
         <div class="premium-grid" id="premiumGrid">
 
-          <div class="premium-card fade-up" data-type="coupe">
+          <div class="premium-card fade-up" data-type="coupe" data-vehicle-id="bmw-m4">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/3849556/pexels-photo-3849556.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/3849556/pexels-photo-3849556.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/3849556/pexels-photo-3849556.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/3849556/pexels-photo-3849556.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -424,7 +426,7 @@
             </div>
           </div>
 
-          <div class="premium-card fade-up" data-type="sedan">
+          <div class="premium-card fade-up" data-type="sedan" data-vehicle-id="amg-gt63">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/63767/pexels-photo-63767.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/63767/pexels-photo-63767.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/63767/pexels-photo-63767.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/63767/pexels-photo-63767.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -448,7 +450,7 @@
             </div>
           </div>
 
-          <div class="premium-card fade-up" data-type="suv">
+          <div class="premium-card fade-up" data-type="suv" data-vehicle-id="range-rover-svr">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -472,7 +474,7 @@
             </div>
           </div>
 
-          <div class="premium-card fade-up" data-type="suv">
+          <div class="premium-card fade-up" data-type="suv" data-vehicle-id="cayenne-gts">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/2612855/pexels-photo-2612855.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/2612855/pexels-photo-2612855.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/2612855/pexels-photo-2612855.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/2612855/pexels-photo-2612855.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -520,7 +522,7 @@
             </div>
           </div>
 
-          <div class="premium-card fade-up" data-type="sedan">
+          <div class="premium-card fade-up" data-type="sedan" data-vehicle-id="s580">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -544,7 +546,7 @@
             </div>
           </div>
 
-          <div class="premium-card fade-up" data-type="electric">
+          <div class="premium-card fade-up" data-type="electric" data-vehicle-id="bmw-i4-m50">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/19281437/pexels-photo-19281437.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/19281437/pexels-photo-19281437.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/19281437/pexels-photo-19281437.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/19281437/pexels-photo-19281437.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -568,7 +570,7 @@
             </div>
           </div>
 
-          <div class="premium-card fade-up" data-type="electric">
+          <div class="premium-card fade-up" data-type="electric" data-vehicle-id="taycan-turbo-s">
             <div class="premium-card-image">
               <img src="https://images.pexels.com/photos/26954166/pexels-photo-26954166.jpeg?auto=compress&cs=tinysrgb&w=800"
              srcset="https://images.pexels.com/photos/26954166/pexels-photo-26954166.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/26954166/pexels-photo-26954166.jpeg?auto=compress&cs=tinysrgb&w=800 800w, https://images.pexels.com/photos/26954166/pexels-photo-26954166.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w"
@@ -653,7 +655,7 @@
           <p class="section-subtitle fade-up" data-i18n="limited.subtitle">Rare machines for extraordinary drivers.</p>
         </div>
         <div class="limited-grid">
-          <div class="limited-card limited-card--featured fade-up">
+          <div class="limited-card limited-card--featured fade-up" data-vehicle-id="zenith-one">
             <div class="limited-image">
               <div class="limited-number">01/07</div>
               <img src="https://images.pexels.com/photos/30644946/pexels-photo-30644946.jpeg?auto=compress&cs=tinysrgb&w=1200"
@@ -672,7 +674,7 @@
               <a href="#inquiry" class="btn btn-primary" data-i18n="limited.zenith.btn">Private Inquiry</a>
             </div>
           </div>
-          <div class="limited-card fade-up">
+          <div class="limited-card fade-up" data-vehicle-id="nemesis-rsr">
             <div class="limited-image">
               <div class="limited-number">01/25</div>
               <img src="https://images.pexels.com/photos/11629361/pexels-photo-11629361.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -686,7 +688,7 @@
               <a href="#inquiry" class="btn btn-small" data-i18n="vehicles.inquire">Inquire</a>
             </div>
           </div>
-          <div class="limited-card fade-up">
+          <div class="limited-card fade-up" data-vehicle-id="volt-hyperion">
             <div class="limited-image">
               <div class="limited-number">01/50</div>
               <img src="https://images.pexels.com/photos/29851072/pexels-photo-29851072.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -941,6 +943,8 @@
     </div>
   </div>
 
+  <script src="js/vehicles.js"></script>
+  <script src="js/vehicle-modal.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
